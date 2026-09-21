@@ -21,9 +21,7 @@ body {
 }
 
 
-/* ---------------------------------------
-   PAGE
---------------------------------------- */
+/* PAGE */
 
 .page {
   position: relative;
@@ -32,7 +30,7 @@ body {
   min-height: 100dvh;
 
   background:
-    url("assets/background.jpg")
+    url("background.jpg")
     center top / cover
     fixed;
 
@@ -54,9 +52,7 @@ body {
 }
 
 
-/* ---------------------------------------
-   MAIN CONTENT
---------------------------------------- */
+/* CONTENT */
 
 .content {
   position: relative;
@@ -65,7 +61,7 @@ body {
 
   width: min(100%, 720px);
 
-  margin: auto;
+  margin: 0 auto;
 
   padding:
     60px
@@ -74,9 +70,7 @@ body {
 }
 
 
-/* ---------------------------------------
-   LOGO
---------------------------------------- */
+/* LOGO */
 
 .logo-wrapper {
   width: 180px;
@@ -89,7 +83,7 @@ body {
 
   border-radius: 50%;
 
-  background: #fff;
+  background: #ffffff;
 
   display: flex;
   align-items: center;
@@ -110,9 +104,7 @@ body {
 }
 
 
-/* ---------------------------------------
-   INTRO
---------------------------------------- */
+/* INTRO */
 
 .intro {
   text-align: center;
@@ -132,7 +124,7 @@ body {
 
   font-size: 20px;
 
-  color: #777;
+  color: #777777;
 }
 
 .tagline {
@@ -147,13 +139,11 @@ body {
 
   font-weight: 600;
 
-  color: #555;
+  color: #555555;
 }
 
 
-/* ---------------------------------------
-   QUICK ACTION BUTTONS
---------------------------------------- */
+/* QUICK ACTIONS */
 
 .quick-actions {
   display: flex;
@@ -175,9 +165,9 @@ body {
   align-items: center;
   justify-content: center;
 
-  background: white;
+  background: #ffffff;
 
-  color: #111;
+  color: #111111;
 
   box-shadow:
     0 5px 16px
@@ -186,8 +176,8 @@ body {
   text-decoration: none;
 
   transition:
-    transform .2s ease,
-    box-shadow .2s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .quick-button:hover {
@@ -206,9 +196,7 @@ body {
 }
 
 
-/* ---------------------------------------
-   GENERAL CARD
---------------------------------------- */
+/* GENERAL CARD */
 
 .card {
   background:
@@ -222,9 +210,7 @@ body {
 }
 
 
-/* ---------------------------------------
-   CONTACT CARD
---------------------------------------- */
+/* CONTACT CARD */
 
 .contact-card {
   padding: 26px;
@@ -250,7 +236,7 @@ body {
 
   border-radius: 50%;
 
-  background: #000;
+  background: #000000;
 
   display: flex;
   align-items: center;
@@ -261,13 +247,13 @@ body {
   width: 25px;
   height: 25px;
 
-  fill: white;
+  fill: #ffffff;
 }
 
 .divider {
   height: 1px;
 
-  background: #eee;
+  background: #eeeeee;
 
   margin:
     20px
@@ -290,7 +276,7 @@ body {
 .contact-block p {
   text-decoration: none;
 
-  color: #777;
+  color: #777777;
 
   font-size: 17px;
 
@@ -314,7 +300,7 @@ body {
 
   background: #050505;
 
-  color: white;
+  color: #ffffff;
 
   text-decoration: none;
 
@@ -322,9 +308,7 @@ body {
 }
 
 
-/* ---------------------------------------
-   SOCIAL SECTION
---------------------------------------- */
+/* SOCIAL LINKS */
 
 .social-section {
   margin-top: 28px;
@@ -345,7 +329,7 @@ body {
 .social-header p {
   margin-top: 8px;
 
-  color: #777;
+  color: #777777;
 
   font-size: 20px;
 }
@@ -370,7 +354,7 @@ body {
 
   border-radius: 18px;
 
-  color: #333;
+  color: #333333;
 
   text-decoration: none;
 
@@ -379,8 +363,8 @@ body {
     rgba(0, 0, 0, 0.06);
 
   transition:
-    transform .18s ease,
-    box-shadow .18s ease;
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
 .social-card:hover {
@@ -413,7 +397,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  color: white;
+  color: #ffffff;
 
   font-weight: 700;
 
@@ -439,9 +423,7 @@ body {
 }
 
 
-/* ---------------------------------------
-   HAMBURGER MENU
---------------------------------------- */
+/* MENU BUTTON */
 
 .menu-button {
   position: fixed;
@@ -454,7 +436,7 @@ body {
   width: 55px;
   height: 55px;
 
-  border: 0;
+  border: none;
 
   border-radius: 50%;
 
@@ -479,15 +461,13 @@ body {
   width: 25px;
   height: 2px;
 
-  background: white;
+  background: #ffffff;
 
   border-radius: 10px;
 }
 
 
-/* ---------------------------------------
-   SIDE MENU
---------------------------------------- */
+/* SIDE MENU */
 
 .side-menu {
   position: fixed;
@@ -502,14 +482,13 @@ body {
 
   padding: 80px 30px;
 
-  background: #fff;
+  background: #ffffff;
 
   box-shadow:
     -8px 0 30px
-    rgba(0, 0, 0, .14);
+    rgba(0, 0, 0, 0.14);
 
-  transition:
-    right .3s ease;
+  transition: right 0.3s ease;
 }
 
 .side-menu.open {
@@ -519,11 +498,12 @@ body {
 .side-menu nav {
   display: flex;
   flex-direction: column;
+
   gap: 24px;
 }
 
 .side-menu a {
-  color: #222;
+  color: #222222;
 
   text-decoration: none;
 
@@ -538,7 +518,7 @@ body {
   top: 18px;
   right: 20px;
 
-  border: 0;
+  border: none;
 
   background: none;
 
@@ -548,9 +528,7 @@ body {
 }
 
 
-/* ---------------------------------------
-   FLOATING BOTTOM BUTTONS
---------------------------------------- */
+/* BOTTOM BUTTONS */
 
 .bottom-actions {
   position: fixed;
@@ -569,13 +547,13 @@ body {
   width: 58px;
   height: 58px;
 
-  border: 0;
+  border: none;
 
   border-radius: 50%;
 
-  background: #000;
+  background: #000000;
 
-  color: #fff;
+  color: #ffffff;
 
   font-size: 24px;
 
@@ -583,13 +561,11 @@ body {
 
   box-shadow:
     0 5px 16px
-    rgba(0, 0, 0, .22);
+    rgba(0, 0, 0, 0.22);
 }
 
 
-/* ---------------------------------------
-   ADD CONTACT
---------------------------------------- */
+/* ADD CONTACT */
 
 .add-contact {
   position: fixed;
@@ -609,7 +585,7 @@ body {
     7px
     20px;
 
-  border: 0;
+  border: none;
 
   border-radius: 35px;
 
@@ -620,15 +596,15 @@ body {
 
   gap: 15px;
 
-  background: #000;
+  background: #000000;
 
-  color: white;
+  color: #ffffff;
 
   cursor: pointer;
 
   box-shadow:
     0 5px 18px
-    rgba(0, 0, 0, .25);
+    rgba(0, 0, 0, 0.25);
 }
 
 .add-contact-text {
@@ -645,9 +621,9 @@ body {
 
   border-radius: 50%;
 
-  background: white;
+  background: #ffffff;
 
-  color: black;
+  color: #000000;
 
   display: flex;
   align-items: center;
@@ -657,9 +633,7 @@ body {
 }
 
 
-/* ---------------------------------------
-   QR MODAL
---------------------------------------- */
+/* QR MODAL */
 
 .modal {
   position: fixed;
@@ -674,7 +648,7 @@ body {
   justify-content: center;
 
   background:
-    rgba(0, 0, 0, .55);
+    rgba(0, 0, 0, 0.55);
 
   padding: 25px;
 }
@@ -686,22 +660,19 @@ body {
 .modal-box {
   position: relative;
 
-  width: min(
-    100%,
-    380px
-  );
+  width: min(100%, 380px);
 
   padding: 28px;
 
   border-radius: 18px;
 
-  background: white;
+  background: #ffffff;
 
   text-align: center;
 
   box-shadow:
     0 15px 50px
-    rgba(0, 0, 0, .25);
+    rgba(0, 0, 0, 0.25);
 }
 
 .modal-box h3 {
@@ -720,7 +691,7 @@ body {
   top: 10px;
   right: 14px;
 
-  border: 0;
+  border: none;
 
   background: transparent;
 
@@ -730,9 +701,7 @@ body {
 }
 
 
-/* ---------------------------------------
-   RESPONSIVE
---------------------------------------- */
+/* MOBILE */
 
 @media (max-width: 650px) {
 
@@ -779,7 +748,9 @@ body {
   .social-card {
     min-height: 80px;
 
-    padding: 15px 20px;
+    padding:
+      15px
+      20px;
   }
 
   .social-icon {
@@ -795,24 +766,6 @@ body {
   .add-contact {
     right: 14px;
     bottom: 18px;
-  }
-
-}
-
-
-/* ---------------------------------------
-   LARGE DESKTOP
---------------------------------------- */
-
-@media (min-width: 900px) {
-
-  .page {
-    background-position:
-      center center;
-  }
-
-  .content {
-    padding-top: 70px;
   }
 
 }
