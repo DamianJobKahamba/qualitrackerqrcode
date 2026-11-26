@@ -1,0 +1,400 @@
+/* ==========================================================
+   QualiTracker digital business card - minimal
+   Palette (QualiTracker Brand Identity Kit):
+   Deep Teal #025561 · Dark Navy #1A3A4A · Quality Gold #C9A84C
+   Mint Light #E6F4F1 · Lab Grey #F4F6F7 · Body Grey #666666
+   Border Grey #E0E0E0 · Clinical White #FFFFFF
+   Fonts: Poppins (headings) · Inter (body)
+   ========================================================== */
+
+:root {
+  --teal: #025561;
+  --navy: #1A3A4A;
+  --gold: #C9A84C;
+  --mint: #E6F4F1;
+  --lab-grey: #F4F6F7;
+  --body-grey: #666666;
+  --border: #E0E0E0;
+  --white: #FFFFFF;
+
+  --font-head: "Poppins", "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --font-body: "Inter", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--lab-grey);
+  color: var(--navy);
+}
+
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: linear-gradient(180deg, #E6F4F1 0%, #F4F6F7 55%);
+}
+
+.content {
+  width: min(100%, 520px);
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+
+/* PROFILE */
+
+.profile {
+  background: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 8px 28px rgba(26, 58, 74, 0.10);
+  overflow: hidden;
+}
+
+.cover {
+  height: 230px;
+  background: #D9EEE9;
+}
+
+.cover-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.logo-badge {
+  position: relative;
+  z-index: 2;
+
+  width: 190px;
+  margin: -34px 0 0 22px;
+  padding: 12px 16px;
+
+  border-radius: 16px;
+  background: var(--white);
+  box-shadow: 0 6px 18px rgba(26, 58, 74, 0.18);
+}
+
+.logo-badge img {
+  display: block;
+  width: 100%;
+}
+
+.intro {
+  padding: 18px 22px 26px;
+}
+
+.intro h1 {
+  font-family: var(--font-head);
+  font-size: 28px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.message {
+  margin-top: 4px;
+  font-family: var(--font-head);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--teal);
+}
+
+.description {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-radius: 16px;
+
+  background: var(--mint);
+
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--navy);
+}
+
+
+/* PHOTO CARD */
+
+.photo-card {
+  margin-top: 18px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 8px 28px rgba(26, 58, 74, 0.10);
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+
+/* SAVE CONTACT */
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.save-contact {
+  flex: 1;
+  height: 54px;
+
+  border: none;
+  border-radius: 16px;
+
+  background: var(--teal);
+  color: var(--white);
+
+  font-family: var(--font-head);
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(2, 85, 97, 0.28);
+  transition: background 0.2s ease;
+}
+
+.save-contact:hover {
+  background: var(--navy);
+}
+
+.square-button {
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
+
+  border: none;
+  border-radius: 16px;
+
+  background: var(--white);
+  color: var(--teal);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(26, 58, 74, 0.10);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.square-button:hover {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.square-button svg {
+  width: 24px;
+  height: 24px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* CONTACT ROWS */
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 14px 20px 14px 14px;
+  border-radius: 18px;
+
+  background: var(--white);
+  color: var(--navy);
+  text-decoration: none;
+
+  box-shadow: 0 5px 18px rgba(26, 58, 74, 0.07);
+
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(26, 58, 74, 0.13);
+}
+
+.row-icon {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  border-radius: 50%;
+
+  background: var(--teal);
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-icon svg {
+  width: 25px;
+  height: 25px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.row-icon svg.solid {
+  fill: currentColor;
+  stroke: none;
+}
+
+.row-icon svg .dot {
+  fill: currentColor;
+  stroke: none;
+}
+
+.row-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-text strong {
+  font-family: var(--font-head);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.row-text small {
+  margin-top: 1px;
+  font-size: 14px;
+  color: var(--body-grey);
+  overflow-wrap: anywhere;
+}
+
+.row-arrow {
+  font-size: 20px;
+  color: var(--teal);
+}
+
+.save-contact:focus-visible,
+.square-button:focus-visible,
+.row:focus-visible,
+.modal-close:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+
+/* QR MODAL */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(26, 58, 74, 0.6);
+  padding: 25px;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-box {
+  position: relative;
+  width: min(100%, 380px);
+  padding: 28px;
+
+  border-radius: 20px;
+  background: var(--white);
+  text-align: center;
+
+  box-shadow: 0 15px 50px rgba(26, 58, 74, 0.3);
+}
+
+.modal-box h3 {
+  margin-bottom: 20px;
+  font-family: var(--font-head);
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.qr-image {
+  width: 100%;
+  max-width: 280px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+
+  border: none;
+  background: transparent;
+  color: var(--navy);
+
+  font-size: 31px;
+  cursor: pointer;
+}
+
+
+/* TOAST */
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 32px;
+  z-index: 120;
+
+  max-width: calc(100vw - 32px);
+  padding: 11px 18px;
+  border-radius: 24px;
+
+  background: var(--navy);
+  color: var(--white);
+
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 12px);
+
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 380px) {
+  .intro h1 { font-size: 25px; }
+  .cover { height: 200px; }
+}
